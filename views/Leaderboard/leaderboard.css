@@ -1,0 +1,130 @@
+
+body {
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #192650;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.navbar-nav .nav-item .active-link,
+.navbar-nav .nav-item .active-link:hover {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+.container {
+    max-width: 800px;
+    background: #b8cddf;
+    border-radius: 12px;
+    padding: 10 0px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h3 {
+    margin: 30px;
+    text-align: center;
+}
+
+.positionCol,
+.amountCol,
+.nameCol {
+    text-align: center;
+}
+
+.table-container {
+    margin-top: 20px;  
+    width: 800px;
+}
+
+.table-heading th {
+    align-items: center;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.presentBtn {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: aliceblue;
+    border-radius: 4px;
+}
+
+.previousBtn,
+.nextBtn {
+    padding: 5px 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: aliceblue;
+    border-radius: 4px;
+}
+
+.firstBtn,
+.lastBtn {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: black;
+}
+
+.presentBtn:hover,
+.previousBtn:hover,
+.nextBtn:hover {
+    background-color: #0a74ee;
+}
+
+.presentBtn.active {
+    background-color: #192650;
+    color: #fff;
+    margin: 5px;
+}
+
+@media (max-width: 576px) {
+
+    .navbar-collapse.show {
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #192650;
+        text-align: center;
+        padding: 1rem 0;
+        z-index: 9999;
+    }
+
+    .navbar-nav {
+        display: inline-block;
+    }
+
+}

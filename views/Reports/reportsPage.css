@@ -1,0 +1,112 @@
+body {
+    background-color: #f8f9fa;
+}
+
+nav {
+    background-color: #192650;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.navbar-nav .nav-item .active-link,
+.navbar-nav .nav-item .active-link:hover {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+.outer-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.container {
+    background-color: #b8cddf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+h1,
+h2 {
+    color: #343a40;
+}
+
+table {
+    margin-top: 10px;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+.table-heading {
+    text-align: center;
+}
+
+.form-select,
+.form-control {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.report-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 7px;
+  }
+  
+  .toggle-btn.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  @media (max-width: 992px) {
+
+    .navbar-collapse.show {
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #192650;
+        text-align: center;
+        padding: 1rem 0;
+        z-index: 9999;
+    }
+
+    .navbar-nav {
+        display: inline-block;
+    }
+
+}

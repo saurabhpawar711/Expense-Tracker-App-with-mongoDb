@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #192650;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-item .active-link,
+.navbar-nav .nav-item .active-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b8cddf;
+    border-radius: 12px;
+    padding: 10 0px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.table-heading {
+    color: rgb(0, 0, 0);
+}
+
+.table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-label {
+    font-weight: bold;
+    padding: 5px;
+    width: 100px;
+    background: #192650;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control {
+    border-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 35px;
+    padding: 4px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.select {
+    border-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 4px;
+    margin: 0;
+    width: 100%;
+}
+
+select option {
+    border-radius: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.wide-input {
+    width: 100%;
+}
+
+.btn1 {
+    background: #192650;
+    color: aliceblue;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.table-responsive {
+    width: 100%;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table-heading th {
+    text-align: center;
+}
+
+.delbtn:hover {
+    background: #f02525;
+    color: aliceblue;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.editbtn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.deleteEditCol {
+    text-align: right;
+}
+
+.dateCol,
+.categoryCol,
+.amountCol,
+.descriptionCol {
+    text-align: center;
+}
+
+.premiumBtn {
+    background: #e7910e;
+    color: white;
+    padding-bottom: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.premiumBtn:hover {
+    box-shadow: 0 8px 16px 0 rgba(173, 173, 173, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.premiumUser {
+    color: aliceblue;
+    background: #e7910e;
+    margin: 6px;
+    padding: 6px;
+    border-radius: 7px;
+    display: none;
+}
+
+.container-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.itemsPerPage {
+    padding: 4px;
+    margin-left: 3px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.presentBtn {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: aliceblue;
+    border-radius: 4px;
+}
+
+.previousBtn,
+.nextBtn {
+    padding: 5px 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: aliceblue;
+    border-radius: 4px;
+}
+
+.firstBtn,
+.lastBtn {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: black;
+}
+
+.presentBtn:hover,
+.previousBtn:hover,
+.nextBtn:hover {
+    background-color: #0a74ee;
+}
+
+.presentBtn.active {
+    background-color: #192650;
+    color: #fff;
+    margin: 5px;
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        padding: 10px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .deleteEditCol {
+        text-align: left;
+        padding-top: 5px;
+    }
+
+    .navbar-collapse.show {
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #192650;
+        text-align: center;
+        padding: 1rem 0;
+        z-index: 9999;
+    }
+
+    .navbar-nav {
+        display: inline-block;
+    }
+
+    .premiumBtn {
+        margin: 0 auto !important;
+        margin-bottom: 10px;
+    }
+
+    .premiumUser {
+        margin: 0 auto;
+        width: 170px;
+    }
+
+    .logoutbtn {
+        margin-top: 15px;
+    }
+}
